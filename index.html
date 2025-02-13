@@ -1,0 +1,174 @@
+<!-- Arimathea Charmille H. Suarez -->
+<!-- CMSC 100 - U3L -->
+<!-- Description : This is an exercise that involves the use of html, css, & flexbox in order to create a portfolio website -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Arimathea</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- This will serve as an anchor at the top to avoid auto-scrolling -->
+    <a id="top"></a>
+
+    <header>
+        <nav>
+            <!-- The logo section -->
+            <div class="logo">
+                <img src="A_Suarez.png" alt="Arimathea Logo">
+            </div>
+
+            <!-- The navigation menu -->
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (This is where the background image for the first part is found) -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="Bg.png" alt="Background with picture">
+        </div>
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Arimathea</span></h1>
+            <p>Creative Designer & Web Developer</p>
+            <button onclick="location.href='index.html#about'" class="btn">Click for more info!</button>
+        </div>
+    </section>
+
+    <!-- The 'about' section -->
+    <section id="about">
+        <div class="container">
+            <h1 class="about-heading">ABOUT ME</h1>
+            <div class="about-grid">
+                <div class="about-section">
+                    <p>
+                        I am an only child who has always dedicated myself to learning new things, such as designing and software development, since I began my studies at university. This journey was inspired by my father’s influence to pursue programming. My journey began in learning Python during my first semester, and since then, I’ve always strived to familiarize myself with and practice the programming languages used in different subjects. Moreover, I’ve devoted my time and passion to mastering various programming languages.
+                    </p>
+                </div>
+                <div class="about-section">
+                    <p>
+                        It started with using mathematical modeling and optimization techniques, applying them to projects like ticket pricing using Gaussian elimination and the Simplex Method. I also developed a restaurant management system in Java, focusing on object-oriented principles like inheritance and abstraction, and later integrated concurrency into a gacha game simulator using multithreading.
+                    </p>
+                </div>
+                <div class="about-section">
+                    <p>
+                        Throughout my journey, I have encountered both physical and mental challenges, which have tested and proven my resilience. These experiences have further strengthened my determination to overcome obstacles and improve my problem-solving skills.
+                    </p>
+                </div>
+                <div class="about-section">
+                    <p>
+                        My expertise extends to C programming, where I have worked with data structures such as AVL and binary search trees, and implemented heap operations. I also explore scientific computing with R, creating predictive models using polynomial regression. In light of these, I'm constantly looking for new challenges and chances to learn more, especially when it comes to creating dynamic apps using frameworks like JavaFX. As a result, this programming adventure is a part of my life that should be chronicled indefinitely. Who knows? Maybe as time goes on, I'll grow to love programming even more, which can be an asset that can be utilized in future times.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- The 'skills' section -->
+    <section id="skills">
+        <div class="container">
+            <h2>MY SKILLS:</h2>
+
+            <!-- The skill progress bars -->
+            <p>Website Design - 86%</p>
+            <progress value="86" max="100"></progress> 
+
+            <p>Front-end Development - 75%</p>
+            <progress value="75" max="100"></progress>
+
+            <p>Problem-Solving - 77%</p>
+            <progress value="77" max="100"></progress>
+
+            <p>Creativity & Innovation - 88%</p>
+            <progress value="88" max="100"></progress>
+
+            <p>Teamwork & Collaboration - 87%</p>
+            <progress value="87" max="100"></progress>
+        </div>
+    </section>
+
+    <!-- The 'projects' section -->
+    <section id="projects">
+        <div class="container">
+            <h2>PROJECTS</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="Typing_Game_Alpha.PNG" alt="Project 1">
+                    <p>
+                        <!-- Project 1: Typing Game -->
+                        Typing Alpha is a fast-paced typing game designed to enhance your speed and accuracy. 
+                        Test your skills with dynamic challenges, engaging visuals, and real-time feedback.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="Silly_Pedestrian.png" alt="Project 2">
+                    <p>
+                        <!-- Project 2: JavaFX Game -->
+                        A Silly Pedestrian is a JavaFX pedestrian crossing game where the character mindlessly 
+                        walks across the road, inevitably getting hit by a car, leading to a game-over or humorous effect.
+                    </p>
+                </div>
+                <div class="project">
+                    <img src="Elbi Express.png" alt="Project 3">
+                    <p>
+                        <!-- Project 3: Delivery Game -->
+                        Elbi Express is a timed, 2-player delivery game utilizing JavaFX. It features a happiness level 
+                        mechanic and dynamic weather conditions that add challenge and unpredictability to the gameplay.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 'Contact' section -->
+    <section id="contact">
+        <div class="container">
+            <h2>CONTACT DETAILS</h2>
+            <p>Phone: <a href="tel:+1234567890">(02) 834 1697</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/arimathea" target="_blank">linkedin.com/in/arimathea</a></p>
+        </div>
+    </section>
+
+    <!-- The footer section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="A_Suarez.png" alt="Logo">
+            </div>
+            <div class="footer-contact">
+                <p>Address: Los Baños, Laguna</p>
+                <p>Contact: +639173456</p>
+                <p>Email: arimatheac.suarez@gmail.com</p>
+                <p><a href="https://www.personalwebsite.com" target="_blank">Visit My Website</a></p> <!-- Will open a new site that will be the target when clicked -->
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 ASuarez. All Rights Reserved.</p> <!-- Copyright -->
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top">
+            <a href="#top" class="btn-back-to-top">Back to Top</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+
+<!-- References: -->
+<!-- (progress tag) https://www.w3schools.com/TAGs/tag_progress.asp -->
+<!-- (symbol for copyright) https://www.w3schools.com/html/html_symbols.asp-->
+<!-- (href target) https://www.w3schools.com/TAgs/att_a_target.asp-->
